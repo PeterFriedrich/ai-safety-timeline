@@ -19,3 +19,8 @@ locks, add a row; when one is superseded, strike it (`~~...~~`) or mark it
 
 | When | Decision | Full reasoning |
 |------|----------|----------------|
+| 2026-11-13 | **v1 is about 30-40 curated events (1950s to today) and 20-30 terms.** Rejected: a 10-15 event pilot, and 100+ events before anything ships. [unverifiable] | `docs/SPEC_site.md` §2 |
+| 2026-11-13 | **The future half shows both undated risk categories and other people's forecasts as overlapping date ranges; the ranges are the main visual, each attributed on the bar.** The site publishes no forecast of its own. [unverifiable] until the attribution guard exists. | `docs/SPEC_site.md` §4 |
+| 2026-11-13 | **Claude drafts entries from cited sources; only entries the owner marks reviewed are published.** Rejected: owner writes everything; publish on automated checks with spot review. [unverifiable] until the review-gate guard exists. | `docs/SPEC_site.md` §5, §7 |
+| 2026-11-13 | **Contested claims: explain the range of views, skeptics included; the site takes no side on likelihood or timing.** Rejected: a safety-concerned voice; events with no debates. [unverifiable] | `docs/SPEC_site.md` §6 |
+| 2026-11-13 | **Hosted on GitHub Pages as a static Astro site.** Rejected: hand-written HTML, an off-the-shelf timeline widget. [unverifiable] | `docs/SPEC_site.md` §7 |
