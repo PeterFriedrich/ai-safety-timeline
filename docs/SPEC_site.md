@@ -100,10 +100,11 @@ Two separate markings on every event.
 |---|---|---|
 | 1, landmark | The story can't be told without it. An iconic paper sits here beside major incidents. | Always shown, large, with its title. |
 | 2, notable | Important, but the reader can follow the story without it. | Shown smaller, title on hover or tap; a filter can hide it. |
+| 3, context | Background that enriches the story: minor papers, posts, smaller events. | Hidden by default; a "show all" filter adds it as small dots. |
 
 Tier and kind are independent: a paper can be tier 1 and an incident tier 2.
 Each event records one sentence on why it got its tier, so tiering stays
-consistent across batches. Roughly 15 tier 1 and 20 tier 2 in v1; the
+consistent across batches. Roughly 15 tier 1 and 20 tier 2 in v1, and tier 3 as it comes up (outside the 30 to 40 count); the
 Phase 1 lists propose a tier per event for the owner to change.
 
 ## 5. Content model
@@ -121,6 +122,12 @@ fields at the top. Five kinds:
 
 Review status is `draft` or `reviewed`, with the review date. **Only reviewed
 entries are built into the site.**
+
+**Dates shown to readers.** Each entry shows "Human checked: <month year>",
+the date the owner last reviewed it. Later, when some updates are automated
+(§8, After), an entry changed by automation after its last human check also
+shows "Updated automatically: <date>, not yet checked by a person" until the
+owner reviews it again. v1 only needs the human-checked date.
 
 ## 6. Editorial rules
 
@@ -180,12 +187,12 @@ Each phase ends at something the owner looks at.
 | 4 | Site skeleton, deploy workflow, the sample entries live. | The live site with samples. |
 | 5 | Remaining entries drafted in batches of about 8; owner reviews each batch. | Each batch as a PR. |
 | 6 | About page, phone and accessibility pass, link check, launch. | The finished v1. |
-| After | Weekly link check, 6-monthly forecast re-check, new events as they happen. | GitHub issues. |
+| After | Weekly link check, 6-monthly forecast re-check, new events as they happen. Later: some automated updates (scope not set), shown as unchecked until reviewed (§5). | GitHub issues. |
 
 ## 9. Still open
 
 1. **Licence for the text:** Creative Commons Attribution, or all rights
    reserved? Owner will decide later; needed before launch (Phase 6).
-2. **Review dates:** shown to readers on each entry ("Last checked
-   November 2026"), or kept internal?
-3. **Final site name:** working title until then.
+2. **Final site name:** working title until then.
+3. **Automated updates:** what gets updated automatically, and from where. Not
+   needed for v1.
