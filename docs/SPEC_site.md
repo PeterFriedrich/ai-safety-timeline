@@ -26,7 +26,11 @@ It publishes no forecasts or probabilities of its own.
 | Future half | Both: undated risk categories, and attributed forecasts drawn as overlapping date ranges. The ranges are the main visual. |
 | Authorship | Claude drafts from cited sources; nothing publishes until the owner marks it reviewed. |
 | Stance | Explain the range of views, skeptics included. The site takes no side on how likely or how soon. |
-| Hosting | GitHub Pages. |
+| Hosting | GitHub Pages, default address `peterfriedrich.github.io/ai-safety-timeline` for now. |
+| Name | Keep the working title for now. |
+| Start | The main timeline starts at 1950. Earlier speculation goes in a separate "before computers" strip (§4a). |
+| Byline | The owner is named briefly at the bottom of the About page. |
+| Event weight | Events are marked by kind and ranked in tiers, so an iconic paper ranks with a real incident (§4b). |
 
 ## 3. Pages
 
@@ -64,6 +68,44 @@ The hard design problem, so it gets its own section.
 
 Draw this as a mock-up before any build work (Phase 3).
 
+## 4a. Before computers
+
+A short, separate strip before 1950 for interest: people who imagined
+thinking machines, or machines escaping control, before any existed. Examples:
+Ada Lovelace's notes (1843), Samuel Butler's "Darwin among the Machines"
+(1863), Karel Čapek's play *R.U.R.* (1920), which coined "robot".
+
+- Collapsed by default and labelled as speculation and fiction, not events.
+- Does not count toward the 30 to 40 v1 events. About 5 to 8 entries.
+- Same entry format and review rule as events.
+
+## 4b. Event kinds and tiers
+
+Two separate markings on every event.
+
+**Kind** (what it is), shown by icon and colour:
+
+| Kind | Examples |
+|---|---|
+| Incident | A system causing real harm or behaving in a way nobody intended |
+| Research | Papers, technical results |
+| Writing | Books, essays, blog posts, open letters |
+| Capability | A system that changed what people thought was possible |
+| Policy | Laws, executive orders, international agreements |
+| Institution | A lab, safety organisation or government body founded |
+
+**Tier** (how much it matters), shown by size and by when it appears:
+
+| Tier | Meaning | On the timeline |
+|---|---|---|
+| 1, landmark | The story can't be told without it. An iconic paper sits here beside major incidents. | Always shown, large, with its title. |
+| 2, notable | Important, but the reader can follow the story without it. | Shown smaller, title on hover or tap; a filter can hide it. |
+
+Tier and kind are independent: a paper can be tier 1 and an incident tier 2.
+Each event records one sentence on why it got its tier, so tiering stays
+consistent across batches. Roughly 15 tier 1 and 20 tier 2 in v1; the
+Phase 1 lists propose a tier per event for the owner to change.
+
 ## 5. Content model
 
 Content lives in the repo as one Markdown file per entry, with structured
@@ -71,7 +113,7 @@ fields at the top. Five kinds:
 
 | Kind | Key fields |
 |---|---|
-| `event` | date (and precision: day, month or year), title, themes, summary, body, terms used, deeper links, sources, review status |
+| `event` | date (and precision: day, month or year), title, kind, tier, reason for tier, themes, summary, body, terms used, deeper links, sources, review status |
 | `term` | name, short definition, body, related terms, deeper links, sources, review status |
 | `risk` | name, the claim, arguments for, arguments against, related forecasts, sources, review status |
 | `forecast` | who, date published, what is predicted (quoted), range start, range end, best guess if any, method, criticism, source, date last checked, review status |
@@ -142,10 +184,8 @@ Each phase ends at something the owner looks at.
 
 ## 9. Still open
 
-1. **Address:** the default GitHub Pages address, or a custom domain?
-2. **Name:** what the site is called on the page.
-3. **Start date:** 1950 (Turing's paper) or earlier?
-4. **Licence for the text:** Creative Commons Attribution, or all rights
-   reserved?
-5. **Byline:** is the owner named on the About page?
-6. **Review dates:** shown to readers on each entry, or kept internal?
+1. **Licence for the text:** Creative Commons Attribution, or all rights
+   reserved? Owner will decide later; needed before launch (Phase 6).
+2. **Review dates:** shown to readers on each entry ("Last checked
+   November 2026"), or kept internal?
+3. **Final site name:** working title until then.
