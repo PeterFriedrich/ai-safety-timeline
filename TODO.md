@@ -16,6 +16,6 @@ symptom and re-measure the stated cause before acting on it.
 - [ ] **Phase 4: site skeleton and deploy.** Astro build plus GitHub Pages workflow (CI change: own PR, owner go-ahead). Read `docs/WEB_CACHE_BUSTING.md` first. Done when the samples are live.
 - [ ] **Phase 5: draft the rest.** Batches of ~8 entries, one PR each, owner reviews. Done when the v1 set is all `reviewed`.
 - [ ] **Phase 6: launch pass.** About page, phone and accessibility check, link check.
-- [ ] **Open questions for the owner** (`docs/SPEC_site.md` §9): text licence (before Phase 6), review dates shown, final site name.
+- [ ] **Open questions for the owner** (`docs/SPEC_site.md` §9): text licence (before Phase 6), final site name, scope of automated updates (after v1).
 
 ## Done
